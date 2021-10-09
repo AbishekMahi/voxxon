@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="icon" href="/images/icon.png">
+        <meta name="description" content="Enjoy the free music and connect your friends with music.">
+        <meta name="keywords" content="Voxxon, music app, free music">
+        <title>Log in - Voxxon</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css"> 
+        <link rel="stylesheet" href="css/login.css"> 
+        <link rel="stylesheet" href="css/font.css"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0b889a295e.js" crossorigin="anonymous"></script>              
+    </head>
+
+    <body>
+      
+      <!-- navbar -->
+                <nav class="navbar navbar-expand-lg navbar-dark ">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                      <img class="logo" src="/icons/full_logo.png" alt="voxxon-logo" width="" height="50">
+                    </a>                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                      <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="webapp.html">Web App</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="premium.html">Premium</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Download
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="download.html#android"><i class="fab idow fa-google-play"></i>Android</a></li>
+                            <li><a class="dropdown-item" href="download.html#ios"><i class="fab idow fa-apple"></i>iOS</a></li>
+                            <li><a class="dropdown-item" href="download.html#windows"><i class="fab idow fa-windows"></i>Windows</a></li>
+                            <li><a class="dropdown-item" href="download.html#macos"><i class="fab idow fa-apple"></i>MacOS</a></li>
+                            <li><a class="dropdown-item" href="download.html">View more...</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="login.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="signup.html">Sign up</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </nav>
+
+      <!-- Login -->
+
+            <div>
+                <center>
+                  <h1>Login</h1>
+                </center>
+                <div class="loginbox">
+
+                    <div>
+                     <h4>Continue With Social Media</h4>  
+
+                     <button href="#" class="fb btn-social-log">
+                      <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                     </button>
+
+                      <button href="#" class="twitter btn-social-log">
+                        <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                      </button>
+
+                      <button href="#" class="google btn-social-log"><i class="fa fa-google fa-fw">
+                        </i> Login with Google
+                      </button>
+
+                      <button href="#" class="mobile-num btn-social-log"><i class="fa fa-mobile fa-fw">
+                      </i> Login with Mobile Number
+                    </button>
+                    </div>
+
+                    <div >
+                      <h4>Or</h4>
+                    </div>
+
+                    <form >
+                      <div class="mb-3">
+                        <label for="email">Email address or username</label>
+                        <input class="form-control"  type="text" placeholder="Email address or username" name="email" required>
+                        <div id="emailHelp" class="form-text"></div> 
+                    </div>
+
+                      <div class="mb-3">
+                        <label for="psw">Password</label>
+                        <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
+                        <div id="emailHelp" class="form-text"></div>
+                          
+                        <a class="log-link" href="#">Forgot password?</a>
+
+                      </div>
+
+                      <div >
+                          <label class="container">Remember me
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                          <h5><b>Note:</b> By selecting 'Login' you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</h5>
+                        </div>
+
+                      </div>
+                        <center><a href="login.html"><button type="button" class="logbtn btn-social-log">Log in</button></a></center>
+
+                    </form>
+                    
+                    <hr class="hr-log">
+
+                    <div class="signup-login">
+                      <center><h4>New to Voxxon? Create a new account</h4>
+                      <a href="signup.html"><button type="button" class="logbtn btn-social-log" >Sign up</button></a> </center>
+                    </div>
+
+                </div>
+
+            </div>
+      <hr>
+
+      <!-- Footer -->
+
+        <footer class="bottom">
+          <center>
+            <a href="index.html"><img class="logo-down" src="/icons/full_logo.png" alt="voxxon-logo" width="" height="40"></a>
+          </center>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <h3>Quick Links</h3>
+              <ul class="links-list" >
+                <li><a class="footer-link1" href="webapp.html">Web App</a></li>
+                <li><a class="footer-link1" href="download.html">Download</a></li>
+                <li><a class="footer-link1" href="premium.html">Premium</a></li>
+                <li><a class="footer-link1" href="login.html">Login</a></li>
+                <li><a class="footer-link1" href="signup.html">Sign up</a></li>
+              </ul>
+            </div>
+            
+          <div class="col-lg-3 col-md-6">
+            <h3>Communities</h3>
+            <ul class="links-list">
+              <li><a class="footer-link1" href="#">For Users</a></li>
+              <li><a class="footer-link1" href="#">For Artists</a></li>
+              <li><a class="footer-link1" href="#">For Record Labels</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+              <h3>Company</h3>
+              <ul class="links-list">
+                <li><a class="footer-link1" href="#">About</a></li>
+                <li><a class="footer-link1" href="#">Advertise</a></li>
+                <li><a class="footer-link1" href="#">Help & Support</a></li>
+                <li><a class="footer-link1" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+
+          <div class="col-lg-3 col-md-6">
+            <h3>Social links</h3>
+            <a class="footer-link" href="https://facebook.com/AbishekMahi0708"><i class="fab isoc fa-2x fa-facebook"></i></a>
+            <a class="footer-link" href="https://twitter.com/AbishekMahi0708"><i class="fab isoc fa-2x fa-twitter"></i></a>
+            <a class="footer-link" href="https://www.instagram.com/abishek_mahi"><i class="fab isoc fa-2x fa-instagram"></i></a>
+            <a class="footer-link" href="https://www.youtube.com/channel/UC7peeGOGIF_8AKcBqO3IemA"><i class="fab isoc fa-2x fa-youtube"></i></a>
+          </div>
+          
+          </div>
+
+            <center>
+              <p class="font3" >Copyright © 2021 Voxxon Pvt. Ltd. All Rights Reserved. </p>
+            </center>
+      
+        </footer>
+    </body>
+</html>
+
+
+
