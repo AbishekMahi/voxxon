@@ -1,0 +1,462 @@
+/* tab size */
+
+@media only screen and (max-width: 770px) {
+    .logo1 {
+        height: 28px;
+    }
+
+    .sidebar {
+        width: 180px;
+        height: 100%;
+        padding-bottom: 90px;
+        padding: 12px;
+    }
+
+    .topics {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-size: x-large;
+        color: white;
+        opacity: 80%;
+    }
+
+
+    .nav-link {
+        padding: 3px 1rem 0 .8rem;
+        color: #ffffff;
+        opacity: 60%;
+    }
+
+    .nav-top {
+        margin-left: 180px;
+    }
+
+    /*******   Search   *******/
+
+    .search {
+        width: 310px;
+        right: 9rem;
+    }
+
+    .webnav {
+        left: 3%;
+    }
+
+    .PrevBtn {
+        margin-right: 30px;
+    }
+
+    .nav-user {
+        right: 5rem;
+    }
+
+    .user-img {
+        width: 35;
+        height: 35;
+    }
+
+    .main-container {
+        margin: 0px 0px 0px 180px;
+    }
+
+    /******  Top Content  ******/
+
+    .top-content {
+        width: 100%;
+        height: 250px;
+    }
+
+    .top-head {
+        padding: 50px 40px;
+    }
+
+    .top-head h2 {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .trending {
+        height: 150px;
+        width: 100%;
+    }
+
+    .trending-text {
+        padding: 8px;
+    }
+
+    .top-art {
+        width: 150px;
+    }
+
+    .art-back,
+    .album-back,
+    .artist-back {
+        margin-top: -145px;
+        width: 135px;
+        height: 135px;
+    }
+
+    .art-back>* {
+        transition: transform .30s;
+    }
+
+    .art-back:hover {
+        opacity: 1;
+    }
+
+    .art-back-icon {
+        height: 35px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+
+    .art-hover {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        background-color: #00000091;
+        position: absolute;
+        top: -10px;
+    }
+
+    .art-hover:hover {
+        opacity: 1;
+    }
+
+    .top-art-hover {
+        height: 40px;
+    }
+
+    .trending h1 {
+        font-size: 2.3rem;
+        margin: 13px 0 0px 0px;
+    }
+
+    .trending h5 {
+        font-size: 1.2rem;
+        margin: 8px 0;
+    }
+
+    .trending h4 {
+        font-size: 1.3rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: auto;
+        align-items: center;
+    }
+
+    .carousel-back{
+        position: absolute;
+        left: -40px;
+        width: 120%;
+        height: 287px;
+        z-index: -99;
+      }
+    /******  For You  ******/
+
+    .foryou {
+        margin: 15px 30px 0px 30px;
+    }
+
+    .foryou h2 {
+        font-size: calc(1.325rem + .9vw);
+    }
+
+    .playlist {
+        border-radius: 18px;
+        width: 155px;
+        height: 215px;
+    }
+
+    .playlist:hover {
+        width: 158px;
+        height: 218px;
+    }
+
+    .playlist p {
+        padding: 0px 8px;
+    }
+
+    .playlist h6 {
+        margin: 5px 0 8px 0;
+        font-size: .8rem;
+        padding: 0px 10px;
+    }
+
+    .playlist img {
+        margin: 10px;
+    }
+
+    .playlist-img,
+    .artist-img,
+    .album-img {
+        height: 135px;
+    }
+
+
+    /****** Artist Top Content  ******/
+
+    .top-artist-content {
+        height: 250px;
+    }
+
+    .top-bg {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.493);
+    }
+
+    .abt-artist {
+        height: 180px;
+        margin: 40px 0 0 0px;
+    }
+
+    .artist-text {
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+
+    /******  Verified Check  ******/
+    .check {
+        width: 15px;
+        margin: 8px;
+        top: 110px;
+    }
+
+    #artist-img, .playlist-top-img{
+        width: 170px;
+    }
+    
+
+    .abt-artist h1 {
+        font-size: 2.2rem;
+        margin: 0px 0 0px 0px;
+    }
+
+    .abt-artist h4 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+
+    /** Follow Heart **/
+    .top-btn {
+        height: 35px;
+    }
+
+    .follow-round {
+        margin: 0;
+        margin-left: 30px;
+        background-color: #dadada;
+        border-radius: 50%;
+        display: flex;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .follow {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .play-button {
+        width: 35px;
+    }
+
+    .top-play-btn {
+        padding: 0;
+        padding-right: 15px;
+    }
+
+    .abt-artist .btn-lg {
+        border-radius: 50px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        background-color: #1A1915;
+    }
+
+    .artist-discogs {
+        display: flex;
+        margin: 25px auto 10px 11%;
+    }
+
+    .about-artist {
+        margin: 40px 30px 0px 30px;
+    }
+
+    .about-artist p,
+    h6 {
+        margin: 3% 5% 5%;
+        opacity: 80%;
+        font-size: larger;
+    }
+
+    .main-bottom {
+        text-align: center;
+        margin: 0 auto 100px auto;
+    }
+
+    .songs {
+        margin: 35px 30px 0px 30px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .songs p,
+    h6 {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        white-space: unset;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .songs h2 {
+        font-size: calc(1.325rem + .9vw);
+    }
+
+    .discography h2 {
+        font-size: calc(1.325rem + .9vw);
+    }
+
+
+    .songs .row {
+        flex-wrap: wrap;
+    }
+
+    .song-box {
+        display: flex;
+        margin: 0;
+        padding: 1.1%;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    .song-box:hover {
+        background-color: #2E2E2E;
+        padding: 1.3% 1.5%;
+    }
+
+    .song-box i {
+        margin-right: 5%;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .song-heart {
+        height: 15px;
+        margin-right: 5%;
+        margin-left: 1%;
+        cursor: pointer;
+    }
+
+    .songs-art {
+        height: 60px;
+        border-radius: 2px;
+    }
+
+    .song-text {
+        margin-left: 1.5%;
+        font-size: .8rem;
+    }
+
+    .song-text h6 {
+        margin: 0;
+    }
+
+    .discography .row {
+        margin-top: 2%;
+        margin-left: 4%;
+    }
+
+    /******  footer player  ******/
+
+    .footer {
+        margin: auto 10px 0px 10px;
+        bottom: 2px;
+        height: 75px;
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .foot-left {
+        width: 36%;
+    }
+
+    .foot-art {
+        height: 75px;
+        margin: 0 0 10px 5%;
+        border-radius: 20px;
+    }
+
+    .foot-art:hover {
+        height: 80px;
+        opacity: 80%;
+    }
+
+    .foot-text {
+        margin-left: 3%;
+    }
+    .foot-text h5{
+        font-size: 1.2rem;
+    }
+    .foot-text h6{
+        font-size: 1rem;
+    }
+
+
+    .foot-heart {
+        opacity: 100%;
+    }
+
+    .foot-middle {
+        width: 38%;
+    }
+
+    .play-control .fas {
+        margin: 5px 8px 15px;
+        font-size: 18;
+    }
+
+    .foot-right {
+        width: 26%;
+    }
+
+    .foot-right .far,
+    .fas {
+        margin-left: 5%;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .ifas{
+        height: 20;
+        margin-right: 15px;
+      }
+
+    .foot-right-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 25px;
+    }
+
+    .volume-range {
+        margin-left: 10px;
+        height: 2px;
+        width: 30%;
+        padding: 2;
+        margin: 0;
+        cursor: pointer;
+    }
+
+
+}

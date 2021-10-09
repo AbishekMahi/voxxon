@@ -1,0 +1,252 @@
+/******  Top Content  ******/
+
+.top-artist-content{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top-bg {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.top-head {
+  padding: 50px 45px;
+}
+
+
+.abt-artist {
+  height: 200px;
+  width: 100%;
+  margin: 70px 0 0 0px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #ffffff;
+}
+
+.artist-text {
+  text-align: left;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+/******  Verified Check  ******/
+.check {
+  width: 20px;
+  margin: 10px;
+  top: 120px;
+  position: absolute;
+}
+
+
+#artist-img {
+  width: 220px;
+  border-radius: 50%;
+  overflow: visible;
+}
+
+.abt-artist h1 {
+  font-size: 4.5rem;
+  margin: 0px 0 0px 0px;
+}
+
+.abt-artist h5 {
+  font-size: 1.3rem;
+  margin: 8px 0;
+}
+
+.abt-artist h4 {
+  font-size: 1.6rem;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.abt-artist h1,
+h4,
+h5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: unset;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/** Follow Heart **/
+.top-btn {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.follow-round {
+  margin: 0;
+  margin-left: 30px;
+  background-color: #dadada;
+  border-radius: 50%;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.follow {
+  margin: 0px;
+  padding: 15px;
+}
+
+.play-button{
+  width: 45px;
+}
+.top-play-btn {
+  padding: 0;
+  padding-right: 15px;
+}
+
+.abt-artist .btn-lg {
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: #1A1915;
+}
+
+.abt-artist .btn-outline-light {
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.artist-discogs {
+  display: flex;
+  margin: 40px auto 20px 11%;
+}
+
+.artist-discogs h4 {
+  width: 130;
+  margin: auto 0;
+  opacity: 70%;
+  text-align: left;
+}
+
+.artist-discogs a:hover {
+  text-decoration: none;
+}
+
+.artist-discogs .active {
+  opacity: 100%;
+}
+
+.artist-discogs h4:hover {
+  opacity: 90%;
+}
+
+
+.about-artist {
+  margin: 45px 45px 0px 45px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.about-artist p,
+h6 {
+  margin: 3% 5% 5%;
+  opacity: 80%;
+  font-size: larger;
+}
+.about-artist h2{
+  font-size: 38px;
+}
+
+.main-bottom {
+  text-align: center;
+  margin: 0 auto 100px auto;
+}
+
+.discography{
+  margin: 40px 40px 0px 40px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.discography p,
+h6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: unset;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.discography h2 {
+  font-size: 38px;
+}
+
+.discography .row {
+  margin-top: 2%;
+  margin-left: 1.2%;
+  --bs-gutter-x: 0rem;
+  flex-wrap: nowrap;
+}
+.songs {
+  margin: 45px 45px 0px 45px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.songs p,
+h6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: unset;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.songs h2 {
+  font-size: 38px;
+}
+
+.songs .row{
+  flex-wrap: wrap;
+}
+.song-box {
+  display: flex;
+  margin: 0;
+  padding: 2%;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.song-box:hover {
+  background-color: #2E2E2E;
+  padding: 2.3% 2.5%;
+}
+
+.song-box i{
+  margin-right: 5%;
+  cursor: pointer;
+  font-weight: 600;
+}
+.song-heart{
+  height: 15px;
+  margin-right: 5%;
+  margin-left: 1%;
+  cursor: pointer;
+}
+.songs-art {
+  height: 60px;
+  border-radius: 2px;
+}
+
+.song-text {
+  margin-left: 1.5%;
+  font-size: .8rem;
+}
+.song-text h6{
+  margin: 0;
+}

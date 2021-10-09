@@ -1,0 +1,399 @@
+/***** Fonts *****/
+
+@import url(//db.onlinewebfonts.com/c/0de5d42078b6d0c1123dbcd6420fc26b?family=Pure+Thin);
+
+@import url(//db.onlinewebfonts.com/c/b61a0559b1017e0e9302f8278ece2332?family=Pure+Bold);
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Pure Thin", 'Jost', sans-serif;
+    src: url(fonts/TCM.ttf);
+}
+
+@font-face {
+    font-family: "Pure Thin";
+    src: url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.eot");
+    src: url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.woff") format("woff"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.svg#Pure Thin") format("svg");
+}
+
+@font-face {
+    font-family: "Pure Bold";
+    src: url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.eot");
+    src: url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.woff") format("woff"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.svg#Pure Bold") format("svg");
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+/*******   Scrollbar   *******/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #1A1915;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:rgb(54, 54, 54,.5) ;
+    border-radius: 10px;
+    opacity: 60%;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(54, 54, 54);
+  }
+
+/***** main *****/
+
+::selection{
+    color:#13120D;
+    background-color: #E9D080;
+    text-shadow: #33322f;
+}
+
+body {
+    background-color: #13120D;
+    font-family: "Pure Thin", 'Jost', sans-serif;
+}
+
+hr {
+    border-color: #ffffff;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 3px;
+    width: 100%;
+}
+
+h3 {
+    font-size: 2rem;
+    color: white;
+    margin: 5%;
+    opacity: 90%;
+}
+
+h4 {
+    color: white;
+    margin: 2%;
+    opacity: 90%;
+    text-align: center;
+}
+h5 {
+    color: white;
+    opacity: 90%;
+}
+
+p {
+    margin: 5%;
+    font-size: x-large;
+    color: white;
+    opacity: 70%;
+}
+
+ul {
+    list-style-type: none;
+    list-style: none;
+    margin-left: 0;
+}
+
+
+/***** Navbar *****/
+
+.nav-item {
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.navbar {
+    color: white;
+    margin: 15px;
+}
+
+
+
+.dropdown-menu {
+    background-color: rgba(51, 50, 47, 0.493);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.idow {
+    margin: auto 5%;
+}
+
+
+.container {
+    margin: 10px;
+}
+
+
+
+/*****Top container*****/
+
+.top {
+    margin: 5% 15%;
+
+}
+
+.bg-img2 {
+    background-image: url("images/circle.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.bg-img {
+
+    background-color: rgba(233, 208, 119);
+    width: 100pt;
+    height: 100pt;
+    border-radius: 100%;
+    animation: ripple 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(233, 208, 119, 0.3),
+            0 0 0 2em rgba(233, 208, 119, 0.3),
+            0 0 0 4em rgba(233, 208, 119, 0.3),
+            0 0 0 6em rgba(233, 208, 119, 0.3),
+            0 0 0 8em rgba(233, 208, 119, 0.3);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 2em rgba(233, 208, 119, 0.3),
+            0 0 0 4em rgba(233, 208, 119, 0.3),
+            0 0 0 6em rgba(233, 208, 119, 0.3),
+            0 0 0 8em rgba(233, 208, 119, 0.3),
+            0 0 0 10em rgba(233, 208, 119, 0);
+    }
+}
+
+.c-img {
+    margin: 5% auto;
+}
+
+.welcome {
+    margin: 5% auto;
+}
+
+.homesnap {
+    width: 65%;
+    ;
+    margin: auto;
+    justify-items: top;
+}
+
+
+/*****features*****/
+
+#features {
+    padding: 1% 8%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: width 2s;
+}
+
+.fcontent {
+    margin: 3% auto;
+}
+
+.ficons {
+    width: 80px;
+    transition: width .3s, height .3s;
+}
+
+.ficons:hover {
+    width: 100px;
+    height: 100px;
+    transform: rotate(360deg);
+}
+
+
+
+.dlbtn:hover {
+    background-color: #E9D080;
+}
+
+
+/*****connect*****/
+.bg-img1 {
+    background-image: url("images/circle.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.connect {
+    margin: 5% 15%;
+}
+
+.homesnap1 {
+    width: 65%;
+    position: relative;
+    left: 18%;
+}
+
+.connect-text {
+    margin: 8% auto;
+}
+
+
+
+/*****Footer*****/
+
+.bottom {
+    margin: 3% 15%;
+}
+
+.logo-down {
+    margin: 3% auto;
+}
+
+.footer-link1 {
+    color: white;
+    opacity: 75%;
+    margin: 10px 5px;
+    text-decoration: none;
+}
+
+.footer-link1:hover {
+    color: #E9D080;
+    opacity: 100%;
+}
+
+.footer-link {
+    color: white;
+    opacity: 75%;
+    margin: 10px 10px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #E9D080;
+    opacity: 100%;
+}
+
+.font3 {
+    font-size: 1rem;
+    margin: 5% auto 0px auto;
+}
+
+.isoc {
+    margin-bottom: 1rem;
+}
+
+.links-list {
+    padding-left: 0px;
+    margin: 5%;
+    font-size: large;
+    color: white;
+    opacity: 60%;
+}
+
+
+
+/******************   Download page   ******************/
+
+.top-dwl {
+    margin: 5% 10% auto 10%;
+    text-align: center;
+}
+
+.multi-mock {
+    width: 100%;
+    position: relative;
+    margin: 10% 2%;
+}
+
+.dwl-sec {
+    margin: 5% 5%;
+    padding: .1% 7%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.dwl-cnt {
+    margin: 5% 10%;
+}
+
+.headingline {
+    margin-bottom: 5%;
+    height: 2px;
+    background-color: white;
+    width: 25%;
+    opacity: 100%;
+}
+
+.headingline1 {
+    margin-bottom: 5%;
+    height: 2px;
+    background-color: white;
+    width: 8%;
+    opacity: 100%;
+}
+
+.topic-icon {
+    margin: 0px;
+    color: white;
+}
+
+.topic-icon:hover {
+    color: #E9D080;
+    opacity: 100%;
+}
+
+.dlbtn1 {
+    width: 200px;
+}
+
+
+
+/***** Media query *****/
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 3.2rem;
+        color: white;
+        margin: 5%;
+    }
+
+    .logo {
+        height: 35px;
+    }
+    .dlbtn{
+        margin: 5% 5%;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 4.5rem;
+        color: white;
+        margin: 5%;
+    }
+
+    .logo {
+        height: 40px;
+    }
+    .dlbtn{
+        margin: 5% 5%;
+    }
+
+}

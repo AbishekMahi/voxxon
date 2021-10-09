@@ -1,0 +1,336 @@
+/***** Fonts *****/
+
+@import url(//db.onlinewebfonts.com/c/0de5d42078b6d0c1123dbcd6420fc26b?family=Pure+Thin);
+
+@import url(//db.onlinewebfonts.com/c/b61a0559b1017e0e9302f8278ece2332?family=Pure+Bold);
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Pure Thin", 'Jost', sans-serif;
+    src: url(fonts/TCM.ttf);
+}
+
+@font-face {
+    font-family: "Pure Thin";
+    src: url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.eot");
+    src: url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.woff") format("woff"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.svg#Pure Thin") format("svg");
+}
+
+@font-face {
+    font-family: "Pure Bold";
+    src: url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.eot");
+    src: url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.woff") format("woff"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.svg#Pure Bold") format("svg");
+}
+
+
+/***** Login *****/
+
+@media only screen and (max-width: 700px) {
+  .loginbox{
+    margin: auto 10%;
+}
+}
+
+@media only screen and (min-width: 700px) {
+  .loginbox{
+    margin: auto 28%;
+}
+}
+
+label{
+  margin-bottom: .5rem;
+}
+
+input,
+.btn-social-log {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none; 
+}
+
+input:hover,
+.btn-social-log:hover {
+  opacity: 1;
+}
+
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+.mobile-num{
+  background-color: gray;
+  color: white;
+}
+
+.mb-3{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.form-control{
+  padding: 10;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.mb{
+  font-size: 1.2rem;
+  color: white;
+  margin: 5 auto;
+}
+
+.logbtn{
+  margin: 0 auto 4%;
+  width: 100px;
+  border-radius: 20px;
+  color: white;
+  background-color: #E9D080;
+}
+.logbtn1{
+  margin: 0 auto 4%;
+  width: 200px;
+  border-radius: 20px;
+  color: white;
+  background-color: #E9D080;
+}
+
+/***** check *****/
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:white;
+    opacity: 70%;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    border-radius: 20%;
+    background-color: white;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #E9D080;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.gridRadios1 input:checked ~ .checkmark{
+  background-color: #E9D080;
+}
+
+.lwsoc{
+  margin-bottom: 50px;
+}
+  
+.log-link{
+    color:  white;
+    opacity: 85%;
+    margin: 10px auto;
+}
+
+.log-link:hover{
+    color: #E9D080;
+}
+
+.hr-log{
+  color: white;
+  border-color: rgb(71, 70, 70);
+  border-style: none;
+  border-width: 2px;
+  width: 40%;
+  margin: auto 30%;
+}
+
+.para-sign{
+  font-size: x-large;
+  color: white;
+  opacity: 70%;
+}
+
+.registerbtn {
+  background-color: #E9D080;
+  padding: 16px 20px;
+  margin: 0 auto 4%;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 5;
+}
+
+.signup-login{
+  margin: auto 5%;
+}
+
+
+
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #b7b39f;
+}
+.option-input:checked {
+  background: #E9D080;
+}
+.option-input:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: '';
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #E9D080;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.option-input.radio {
+  border-radius: 50%;
+  margin: auto;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+.body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: box;
+  color: #9faab7;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.div {
+  color: #fff;
+  align-items: center;
+}
+
+label {
+  font-family: "Pure Thin";
+  display: block;
+  margin: 5% auto;
+}

@@ -1,0 +1,421 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <link rel="icon" href="/images/icon.png">
+  <meta name="description" content="Enjoy the free music and connect your friends with music.">
+  <meta name="keywords" content="Voxxon, music app, free music">
+  <title> Troye Sivan - Voxxon </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/artist.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/fonts/Pure-ThinDuranGo.ttf">
+  <link rel="stylesheet" href="/fonts/TCM.ttf">
+  <link rel="stylesheet" href="/css/web.css">
+  <link rel="stylesheet" href="/css/tab.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0b889a295e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <!-- Side bar  -->
+
+  <div class="sidebar">
+    <Center>
+      <a href="/index.html">
+        <img class="logo1" src="/icons/full_logo.png" alt="voxxon-logo" width="" height="35">
+      </a>
+    </Center>
+    <div class="d-flex position-sticky flex-column  text-white">
+
+      <p class="topics">Menu</p>
+      <ul class="nav flex-column">
+        <li>
+          <a href="/webapp.html" class="nav-link active" aria-current="page">
+            <img class="me-2" src="/icons/home-icon.png" width="18" height="" alt="home-icon">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <img class="me-2" src="/icons/discover.png" width="18" height="" alt="home-icon">
+            Discover
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <img class="me-2" src="/icons/trophy.png" width="18" height="" alt="home-icon">
+            Top Chart
+          </a>
+        </li>
+      </ul>
+
+      <p class="topics">Library</p>
+      <ul class="nav  flex-column ">
+        <li>
+          <a href="#" class="nav-link text-white" aria-current="page">
+            <img class="me-2" src="/icons/recent.png" width="18" height="" alt="home-icon">
+            Recent
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <img class="me-2" src="/icons/heart.png" width="18" height="" alt="home-icon">
+            Favourite
+          </a>
+        </li>
+      </ul>
+
+      <p class="topics">Playlists</p>
+      <ul class="nav  flex-column ">
+        <li>
+          <a href="#" class="nav-link text-white" aria-current="page">
+            <img class="me-2" src="/icons/add-playlist.png" width="18" height="" alt="home-icon">
+            Create Playlist
+          </a>
+        </li>
+        <li>
+          <a href="/playlist/Hits-of-Anirudh.html" class="nav-link text-white">
+            <img class="me-2" src="/icons/hand.png" width="18" height="" alt="home-icon">
+            Hits of Anirudh
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <img class="me-2" src="/icons/hand.png" width="18" height="" alt="home-icon">
+            My Melodies
+          </a>
+        </li>
+      </ul>
+
+      <p class="topics">General</p>
+      <ul class="nav  flex-column ">
+        <li>
+          <a href="#" class="nav-link text-white" aria-current="page">
+            <img class="me-2" src="/icons/settings.png" width="18" height="18" alt="home-icon">
+            Settings
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <img class="me-2" src="/icons/bell.png" width="18" height="18" alt="home-icon">
+            Notifications
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+      <!-- navbar -->
+
+      <div class=" nav-top ">
+        <div class=" nav-top-in">
+          <div class="webnav">
+            <button class="PrevBtn">
+              <a href="#">
+                <img class="me-2" src="/icons/back.png" width="12" height="" alt="">
+              </a>
+            </button>
+    
+            <button class="NextBtn active" aria-current="page">
+              <a href="#">
+                <img class="me-2" src="/icons/front.png" width="12" height="" alt="">
+              </a>
+            </button>
+          </div>
+    
+            <div class="search ">
+              <input type="text" class="searchTerm" placeholder="Search songs, artists, albums,...">
+    
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+    
+          <div class="nav-user">
+              <a href="#">
+                <img class="user-img" src="/images/user.png" alt="user-img">
+              </a>
+          </div>
+    
+        </div>
+    
+      </div>
+      
+  <!------- Mani Container  ------->
+
+  <div class="main-container">
+
+    <!-- top  -->
+
+    <div style="background: url(/Artist/Troye_Sivan/Troye.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;" class="top-artist-content">
+
+      <div class="top-bg top-head">
+
+        <div class="abt-artist">
+          <img id="artist-img" src="/Artist/Troye_Sivan/troye-sivan.png" alt="artwotk_img">
+          <div class="col artist-text">
+            <span>
+            <h1>Troye Sivan  <img class="check" src="/icons/check.png" alt=""> </h1>
+            <h4>993,645 Fans</h4>
+            </span>
+            <span class="top-btn">
+              <button type="button" class="btn top-play-btn btn-outline-light btn-lg">
+                 <img class="play-button"  style="margin-right: 5px;" src="/icons/play.png" alt="">Play
+              </button>
+              <span class="follow-round">
+                <img class="follow" src="/icons/red-heart.png" alt="">
+              </span>
+              <i class="fas fa-ellipsis-h"></i>
+            </span>          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- Discogs -->
+    <div class=" row artist-discogs">
+      <h4><a href="/Artist/Troye_Sivan.html">Overview</a> </h4>
+      <h4 class="active" style="width: 100;"><a href="/Artist/Troye_Sivan/Singles.html">Singles</a> </h4>
+      <h4 style="width: 100;"><a href="/Artist/Troye_Sivan/Albums.html">Albums</a> </h4>
+      <h4><a href="/Artist/Troye_Sivan/Biography.html">Biography</a> </h4>
+    </div>
+
+    <!-- Top Songs  -->
+
+    <div class="discography">
+      <span>
+        <h2>Top Songs</h2>
+      </span>
+      <div class="row scroll-right">
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/Headphones.jpg" alt="artwork_img"></center>
+          <p><a href="">Sound of Soul</a></p>
+          <h6>41 Songs</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/sunset.png" alt="artwork_img"></center>
+          <p><a href="">Evening Bliss</a></p>
+          <h6>19 Songs</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/moon.png" alt="artwork_img" </center>
+            <p><a href="">Night Mood</a> </p>
+            <h6>32 Songs</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/monster.png" alt="artwork_img"></center>
+          <p><a href="">Monster God</a></p>
+          <h6>14 Songs</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/rocket.png" alt="artwork_img"></center>
+          <p><a href="">Way To Mars</a></p>
+          <h6>27 Songs</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/space.png" alt="artwork_img"></center>
+          <p><a href="">Searching Alien</a></p>
+          <h6>36 Songs</h6>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Top Albums  -->
+
+    <div class="foryou">
+      <span>
+        <h2>Top Albums</h2>
+      </span>
+
+      <div class="row scroll-right">
+        <div class="playlist">
+          <center><img class="album-img" src="/web-images/Rendu-kaadhal.jpeg" alt="artwork_img"></center>
+          <p><a href="">Rendu Kadhal</a></p>
+          <h6><a href="">Anirudh Ravichander</a></h6>
+        </div>
+        <div class="playlist">
+          <center><img class="artist-img" src="/web-images/arrahman.jpg" alt="artwork_img"></center>
+          <p><a href="">A. R. Rahman</a> </p>
+          <h6>1.9M Fans</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="album-img" src="/web-images/99-songs.jpg" alt="artwork_img" </center>
+            <p><a href="">99 Songs</a></p>
+            <h6><a href="">A. R. Rahman</a></h6>
+        </div>
+        <div class="playlist">
+          <center><img class="album-img" src="/web-images/kummiyadi.jpg" alt="artwork_img"></center>
+          <p><a href="">Kummiyadi</a></p>
+          <h6><a href="">M Ghibran</a>, <a href="">Suganthi</a>, <a href="">Amruthavarshini</a>. </h6>
+        </div>
+        <div class="playlist">
+          <center><img class="artist-img" src="/web-images/Hiphop Tamizha.jpg" alt="artwork_img"></center>
+          <p><a href="">Hiphop Tamizha</a></p>
+          <h6>634K Fans</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="album-img" src="/web-images/Kandangi En Kaadhal Vaasam.jpg" alt="artwork_img"></center>
+          <p><a href="">Kandangi En Kaadhal Vaasam</a></p>
+          <h6><a href="">Sibi Chakravarthi</a></h6>
+        </div>
+        <div class="playlist">
+          <center><img class="album-img" src="/web-images/Urave.jpg" alt="artwork_img"></center>
+          <p><a href="">Urave</a></p>
+          <h6><a href="">Sam Bilgates</a></h6>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Featured Playlists  -->
+
+    <div class="foryou">
+      <span>
+        <h2>Featured Playlists</h2>
+      </span>
+      <div class="row scroll-right">
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/Headphones.jpg" alt="artwork_img"></center>
+          <p><a href="">Sound of Soul</a></p>
+          <h6>41 Songs</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/sunset.png" alt="artwork_img"></center>
+          <p><a href="">Evening Bliss</a></p>
+          <h6>19 Songs</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/moon.png" alt="artwork_img" </center>
+            <p><a href="">Night Mood</a> </p>
+            <h6>32 Songs</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/monster.png" alt="artwork_img"></center>
+          <p><a href="">Monster God</a></p>
+          <h6>14 Songs</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/rocket.png" alt="artwork_img"></center>
+          <p><a href="">Way To Mars</a></p>
+          <h6>27 Songs</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="playlist-img" src="/web-images/space.png" alt="artwork_img"></center>
+          <p><a href="">Searching Alien</a></p>
+          <h6>36 Songs</h6>
+        </div>
+      </div>
+
+    </div>
+    <!-- Similar Artists  -->
+
+    <div class="foryou">
+      <span>
+        <h2>Similar Artists</h2>
+      </span>
+      <div class="row scroll-right">
+        <div class="playlist">
+          <center><img class="artist-img" src="/web-images/Jacob+Bixenman.jpg" alt="artwork_img"></center>
+          <p><a href="">Jacob Bixenman</a></p>
+          <h6>1.4M Fans</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="artist-img" src="/web-images/Alessia Cara.jpg" alt="artwork_img"></center>
+          <p><a href="">Alessia Cara</a></p>
+          <h6>993K Fans</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="artist-img" src="/web-images/alan-walker.jpg" alt="artwork_img"></center>
+          <p><a href="">Alan Walker</a></p>
+          <h6>3.6M Fans</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="artist-img" src="/web-images/Avamax.jpg" alt="artwork_img"></center>
+          <p><a href="">Ava Max</a></p>
+          <h6>1.3M Fans</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="artist-img" src="/web-images/justin.jpg" alt="artwork_img"></center>
+          <p><a href="">Justin Bieber</a></p>
+          <h6>6M Fans</h6>
+        </div>
+        <div class="playlist">
+          <center><img class="artist-img" src="/web-images/taylor.jpg" alt="artwork_img"></center>
+          <p><a href="">Taylor Swift</a></p>
+          <h6>4.2M Fans</h6>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main-bottom">
+      <h3>.....</h3>
+    </div>
+  </div>
+
+
+  <!-- Foot player  -->
+  <div class="foot-blur">
+
+  </div>
+  <footer class="footer">
+
+    <div class="foot-left">
+      <img class="foot-art" src="/web-images/blue-art.png" alt="artwork_img">
+      <div class="col foot-text">
+        <h5><a href="">Talk Me Down</a></h5>
+        <h6 style="margin: 0px;"><a href="/Artist/Troye_Sivan.html">Troye Sivan</a></h6>
+      </div>
+      <div class="foot-heart">
+        <i class="fas fa-heart "></i>
+      </div>
+      <i class="fas fa-ellipsis-h" style="margin-right: 4%; opacity: 70%;"></i>
+    </div>
+
+    <div class="foot-middle row">
+      <div class=" col music-control">
+        <div class="play-control">
+          <i class="fas fa-random" style="opacity: 60%;"></i>
+          <i class="fas fa-backward" style="opacity: 80%;"></i>
+          <i class="fas fa-play"></i>
+          <i class="fas fa-forward" style="opacity: 80%;"></i>
+          <i class="fas fa-retweet" style="opacity: 60%;"></i>
+        </div>
+        <input type="range" class="music-progress" min="0" max="60" value="20">
+      </div>
+    </div>
+
+    <div class="foot-right">
+      <div class="foot-right-icons">
+        <img class="fas" src="/images/Lyrics.png" height="25" alt="">
+        <img class="fas" src="/icons/comment.png" height="25" alt="">
+        <img class="fas" src="/icons/queue.png" height="25" alt="">
+        <i class="fas fa-volume-up" style="margin-right: 4%;" aria-hidden="true"></i>
+        <input type="range" class="volume-range" min="0" max="8" step="0.01" value="1">
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+
+</html>
