@@ -43,10 +43,10 @@ var audio = document.getElementById("audiofile");
 ppbutton.addEventListener("click", function () {
   if (audio.paused) {
     audio.play();
-    ppicon.src = "/icons/pause.png";
+    ppicon.src = "icons/pause.png";
   } else {
     audio.pause();
-    ppicon.src = "/icons/play.png";
+    ppicon.src = "icons/play.png";
   }
 });
 
