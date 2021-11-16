@@ -308,7 +308,7 @@ h6 {
 .playlist-img {
     height: 100px;
     border-radius: 15%;
-    background-image: url(/icons/disc.png);
+    background-image: url(icons/disc.png);
 }
 
 .art-back {
@@ -392,13 +392,13 @@ h6 {
 .artist-img {
     height: 100px;
     border-radius: 100%;
-    background-image: url(/icons/disc.png);
+    background-image: url(icons/disc.png);
 }
 
 .album-img {
     height: 100px;
     border-radius: 2%;
-    background-image: url(/icons/disc.png);
+    background-image: url(icons/disc.png);
 }
 
 .seemore{
