@@ -9,14 +9,16 @@
 
 .pl-song-box {
     display: flex;
-    margin: 0;
     padding:1.5%;
+    margin: 10px;
     border-radius: 10px;
     align-items: center;
+    transition: 300ms;
 }
 .pl-song-box:hover {
     background-color: #2E2E2E;
     padding: 1.8% 1.6%;
+    margin: 0 5px;
 }
 .song-num{
     text-align: right;

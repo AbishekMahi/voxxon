@@ -150,6 +150,7 @@
 
     .carousel-back{
         position: absolute;
+        object-fit: cover;
         left: -40px;
         width: 120%;
         height: 287px;
@@ -395,7 +396,7 @@
     .foot-art {
         height: 75px;
         margin: 0 0 10px 5%;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     .foot-art:hover {

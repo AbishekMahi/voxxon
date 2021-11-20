@@ -246,23 +246,15 @@ body {
 }
 .carousel-back{
   display: flex;
+  object-fit: cover;
   top: -156px;
   /* right: -50px; */
   left: -50px;
   position: absolute;
-  width: 115%;
+  /* width: 105%; */
   height: 320px;
   z-index: -99;
 }
-
-/**
-@keyframes myanimation {
-  0% {  background: url(/images/alan.png); }
-  25%{   }
-  50%{  background: url(/web-images/Saranga\ Dariya.jpg); }
-  75%{  background: url(/web-images/kannil-minnum.jpg); }
-  100% { background: url(/web-images/Baarish\ Ki\ Jaaye.jpg); }
-}**/
 
 
 .top-bg {
@@ -311,6 +303,10 @@ body {
   width: 180px;
   border-radius: 20px;
   overflow: visible;
+  background-image: url(icons/disc.png);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .art-hover {
@@ -433,15 +429,17 @@ h6 {
   width: 180px;
   height: 240px;
   color: #ffffff;
-  margin: 0px;
+  margin: 3px;
+  padding: 3px;
+  transition: 300ms;
 }
 
 
 .playlist:hover {
   background-color: #2E2E2E;
-  width: 183px;
-  height: 243px;
-  transition: width 300ms, height 300ms;
+  margin: 0 3px;
+  padding: 0 3px;
+  /* transition: width 300ms, height 300ms; */
 }
 
 .playlist p {
@@ -471,6 +469,9 @@ h6 {
   height: 145px;
   border-radius: 15%;
   background-image: url(icons/disc.png);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .art-back {
@@ -555,12 +556,18 @@ h6 {
   height: 145px;
   border-radius: 100%;
   background-image: url(icons/disc.png);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .album-img {
   height: 145px;
   border-radius: 2%;
   background-image: url(icons/disc.png);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .seemore{
   width: 150px;
@@ -641,14 +648,14 @@ h6 {
 .foot-art {
   height: 85px;
   margin: 0 0 10px 7%;
-  border-radius: 20px;
+  border-radius: 10px;
+  transition: 300ms;
 }
 
 .foot-art:hover {
   height: 90px;
   opacity: 90%;
   background-color: black;
-  transition: transform .90s;
 }
 
 .foot-text {
