@@ -52,11 +52,8 @@ ppbutton.addEventListener("click", function () {
   }
 });
 
-
 // mute unmute
-var mutebtn;
-
-mutebtn = document.getElementById("mutebtn")
+var mutebtn = document.getElementById("mutebtn")
 mutebtn.addEventListener("click", mute);
 
 function mute() {
@@ -78,12 +75,6 @@ function setvolume() {
   audio.volume = volumeslider.value / 100;
 }
 
-// repeat button
-const repeatBtn = document.querySelector('.fa-retweet');
-repeatBtn.addEventListener('click', () => {
-  repeatBtn.classList.toggle('active');
-})
-
 // audio source
 const music = document.querySelector('#audiofile');
 
@@ -94,7 +85,11 @@ const coverImage = document.querySelector('#cover');
 const currentMusicTime = document.querySelector('.start-time');
 const musicDuration = document.querySelector('.play-time');
 const seekBar = document.querySelector('.music-progress');
-// for setting up music
+
+const repeatBtn = document.querySelector('.fa-retweet');
+
+
+// funtion for setting up music
 
 const setMusic = (i) => {
   seekBar.value = 0;
@@ -112,8 +107,8 @@ const setMusic = (i) => {
       musicDuration.innerHTML = formatTime(music.duration);
   }, 300);
   currentMusicTime.innerHTML = '00 : 00';
-  queue.forEach(item => item.classList.remove('active'));
-  queue[currentMusic].classList.add('active');
+  // queue.forEach(item => item.classList.remove('active'));
+  // queue[currentMusic].classList.add('active');
 }
 
 setMusic(0);
@@ -134,7 +129,6 @@ const formatTime = (time) => {
   return `${min} : ${sec}`;
 }
 
-// // forward or backward
 // //  forward btn
 const forwardBtn = document.querySelector('.fa-forward');
 forwardBtn.addEventListener('click', () => {
@@ -144,7 +138,7 @@ forwardBtn.addEventListener('click', () => {
       currentMusic++;
   }
   setMusic(currentMusic);
-  playBtn.click();
+  ppbutton.click();
 })
 
 // // backward btn
@@ -156,19 +150,26 @@ backwardBtn.addEventListener('click', () => {
       currentMusic--;
   }
   setMusic(currentMusic);
-  playBtn.click();
+  ppbutton.click();
+})
+
+// repeat button
+repeatBtn.addEventListener('click', () => {
+  repeatBtn.classList.toggle('active');
 })
 
 // access playlist
 
-const playlistSection = document.querySelector('.playlist');
-const navBtn = document.querySelector('.music-player-section .nav-btn');
+// const playlistSection = document.querySelector('.playlist');
+// const navBtn = document.querySelector('.music-player-section .nav-btn');
 
-navBtn.addEventListener('click', () => {
-    playlistSection.classList.add('active');
-})
+// navBtn.addEventListener('click', () => {
+//     playlistSection.classList.add('active');
+// })
 
-// // seek bar events
+
+
+// seek bar events
 
 // setInterval(() => {
 //   seekBar.value = music.start-time;
@@ -176,7 +177,7 @@ navBtn.addEventListener('click', () => {
 //   if(Math.floor(music.start-time) == Math.floor(seekBar.max)){
 //       if(repeatBtn.className.includes('active')){
 //           setMusic(currentMusic);
-//           playBtn.click();
+//           ppbutton.click();
 //       } else{
 //           forwardBtn.click();
 //       }
