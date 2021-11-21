@@ -252,7 +252,7 @@ body {
   /* right: -50px; */
   left: -50px;
   position: absolute;
-  /* width: 105%; */
+  width: 105%;
   height: 320px;
   z-index: -99;
 }
