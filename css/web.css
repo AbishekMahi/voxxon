@@ -854,8 +854,8 @@ input[type="range"]::-webkit-slider-thumb {
   flex-direction: column;
 }
 
-.pl-top h3,
-p {
+.pl-top-h3,
+.pl-top-p {
   margin: 3px 10px 2px;
   text-align: center;
   text-overflow: ellipsis;
@@ -901,8 +901,8 @@ p {
   width: 50%;
 }
 
-.player-text h3,
-h4,
+.pl-top-h3,
+.pl-top-p,
 a {
   text-decoration: none;
   margin: 0;

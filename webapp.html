@@ -118,19 +118,19 @@
     <div class="navblur">
       <div class="webnav">
         <button class="PrevBtn active">
-          <img class="me-2" src="icons/back.png" onclick="goBack()" width="12" height="" alt="">
+          <img class="me-2" src="icons/back.png" title="Previous Page" onclick="goBack()" width="12" height="" alt="">
 
         </button>
 
         <button class="NextBtn active" aria-current="page">
-          <img class="me-2" src="icons/front.png" onclick="goForward()" width="12" height="" alt="">
+          <img class="me-2" src="icons/front.png" title="Next Page" onclick="goForward()" width="12" height="" alt="">
         </button>
       </div>
 
       <div class="search ">
         <input type="search" class="searchTerm" placeholder="Search songs, artists, albums,...">
 
-        <button type="submit" class="searchButton">
+        <button title="Search" type="submit" class="searchButton">
           <i class="fa fa-search"></i>
         </button>
       </div>
@@ -908,7 +908,7 @@
     </center>
     <div class="empty-bottom">
       <h3>Refresh for fresh results.</h3>
-      <button type="button" class="logbtn btn-social-log" onClick="window.location.reload();">Refresh</button>
+      <button title="Refresh" type="button" class="logbtn btn-social-log" onClick="window.location.reload();">Refresh</button>
     </div>
 
 
@@ -940,7 +940,7 @@
       </div>
 
       <div class="foot-heart">
-        <i id="like" class="fas fa-heart"></i>
+        <i id="like" title="Like" class="fas fa-heart"></i>
       </div>
       <i class="fas fa-ellipsis-h" style="margin-right: 4%;"></i>
     </div>
@@ -948,11 +948,11 @@
     <div class="foot-middle row">
       <div class="col">
         <div class="play-control">
-          <i class="fas fa-random" style="opacity: 70%;"></i>
-          <i class="fas fa-backward" style="opacity: 80%;"></i>
-          <img id="ppbutton" src="icons/play.png">
-          <i class="fas fa-forward" style="opacity: 80%;"></i>
-          <i class="fas fa-retweet" style="opacity: 70%;"></i>
+          <i class="fas fa-random" title="Suffle" style="opacity: 70%;"></i>
+          <i class="fas fa-backward" title="Backward" style="opacity: 80%;"></i>
+          <img id="ppbutton" title="play" src="icons/play.png">
+          <i class="fas fa-forward" title="Forward" style="opacity: 80%;"></i>
+          <i class="fas fa-retweet" title="Repeat" style="opacity: 70%;"></i>
         </div>
         <input type="range" class="music-progress" min="0" max="1000" value="0">
         <div class="duration">
@@ -963,11 +963,11 @@
     </div>
 
     <div class="foot-right">
-      <img class="ifas" src="images/Lyrics.png" alt="">
-      <img class="ifas" src="icons/comment.png" alt="">
-      <img id="plButton" class="ifas" src="icons/queue.png" alt="">
+      <img class="ifas" src="images/Lyrics.png" title="Lyrics" alt="">
+      <img class="ifas" src="icons/comment.png" title="Comments" alt="">
+      <img id="plButton" class="ifas" src="icons/queue.png" title="Queue" alt="">
       <div class="volume-controls">
-        <img id="mutebtn" src="icons/volume.png">
+        <img id="mutebtn" title="Volume" src="icons/volume.png">
         <!-- <button id="mutebtn"><i class="fas fa-volume-up"  aria-hidden="true"></i></button> -->
         <input id="volumeslider" type="range" class="volume-range" min="0" max="100" value="70" step="0.1">
       </div>
@@ -977,8 +977,8 @@
 
   <section class="pl-queue">
     <div class="pl-top">
-      <h3>Queue</h3>
-      <p>5 Songs</p>
+      <h3 class="pl-top-h3" >Queue</h3>
+      <p class="pl-top-p">5 Songs</p>
     </div>
     <div class="pl-list">
       <div class="queue-song">
