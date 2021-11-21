@@ -147,7 +147,7 @@ body {
   margin: 0px;
   border-radius: 50px 0 0 50px;
   outline: none;
-  color: grey;
+  color: rgb(226, 226, 226);
 }
 
 .searchTerm:hover {
@@ -236,7 +236,7 @@ body {
 /******  Top Content  ******/
 
 .top-content {
-/*   background: url(/images/nethu_jagame_thandhiram.jpg); */
+  /*   background: url(/images/nethu_jagame_thandhiram.jpg); */
   width: 100%;
   height: 300px;
   background-repeat: no-repeat;
@@ -244,7 +244,8 @@ body {
   background-size: cover;
   animation: myanimation 10s infinite alternate;
 }
-.carousel-back{
+
+.carousel-back {
   display: flex;
   object-fit: cover;
   top: -156px;
@@ -439,7 +440,6 @@ h6 {
   background-color: #2E2E2E;
   margin: 0 3px;
   padding: 0 3px;
-  /* transition: width 300ms, height 300ms; */
 }
 
 .playlist p {
@@ -569,7 +569,8 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
 }
-.seemore{
+
+.seemore {
   width: 150px;
   margin: auto;
   padding-bottom: 70px;
@@ -628,8 +629,6 @@ h6 {
   z-index: 1;
 }
 
-
-
 .footer a {
   color: white;
   text-decoration: none;
@@ -655,6 +654,7 @@ h6 {
 .foot-art:hover {
   height: 90px;
   opacity: 90%;
+  margin: 0 -5px 10px 7%;
   background-color: black;
 }
 
@@ -681,7 +681,7 @@ h6 {
   opacity: 80%;
 }
 
-.liked{
+.liked {
   color: red;
 }
 
@@ -710,32 +710,44 @@ h6 {
   opacity: 100%;
 }
 
-.play-control .active{
+.play-control .active {
   color: #E9D080;
   opacity: 90%;
 }
 
 .music-progress {
+  width: 100%;
+  height: 3px;
+  margin: 0;
+  padding: 2px 0;
   -webkit-appearance: none;
   -moz-appearance: none;
+  background: #919090;
   outline: none;
-  height: 1px;
-  width: 100%;
-  padding: 1.5px 0;
-  margin: 0;
-  border: 0;
   cursor: pointer;
-  border-radius: 5px;
-  background: #e7e7e7;
+  border-radius: 10px;
+  border-color: #13120D;
+  overflow: hidden;
+  transition: 30ms;
+  /* box-shadow: inset 0 0 1px rgb(29, 29, 29); */
+}
+
+.music-progress:hover {
+  background: #6b6b6b;
 }
 
 .music-progress::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 12px;
-  width: 12px;
-  cursor: pointer;
-  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  border-radius: 50px;
+  overflow: visible;
+  margin: 0;
+  padding: 2px 0;
   background: #E9D080;
+  cursor: pointer;
+  border: none;
+  box-shadow: -500px 0 0 495px #E9D080;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -779,7 +791,8 @@ input[type="range"]::-webkit-slider-thumb {
   margin-right: 15px;
   cursor: pointer;
 }
-#mutebtn{
+
+#mutebtn {
   height: 25px;
   margin-right: 15px;
   cursor: pointer;
@@ -793,24 +806,139 @@ input[type="range"]::-webkit-slider-thumb {
 .volume-range {
   -webkit-appearance: none;
   -moz-appearance: none;
-  margin-left: 10px;
+  margin: 5px 0px;
   height: 2px;
   width: 60%;
   margin: 0;
   cursor: pointer;
   outline: none;
   padding: 2px 0;
-  background: #e6e5ea;
-  background-image:
-    linear-gradient(to right,
-      #E9D080 45%, #b94a48 85%);
+  overflow: hidden;
+  background: #919090;
 }
 
 .volume-range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 12px;
-  width: 12px;
+  height: 2px;
+  width: 2px;
+  overflow: visible;
   cursor: pointer;
   border-radius: 50%;
   background: #E9D080;
+  box-shadow: -50px 0 0 49px #E9D080;
+}
+
+.pl-queue.active {
+  position: fixed;
+  background: #323231e1;
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+  right: 1px;
+  margin-right: 15px;
+  bottom: 82px;
+  z-index: 99;
+  border-radius: 10px;
+  height: 77%;
+  width: 450px;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+.pl-queue {
+  position: fixed;
+  bottom: -802px;
+}
+
+.pl-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.pl-top h3,
+p {
+  margin: 3px 10px 2px;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+/* .pl-list {
+  overflow-y: scroll !important;
+} */
+
+.queue-song {
+  display: flex;
+  flex-direction: row;
+  margin: 7px 10px;
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+.queue-song:hover {
+  background-color: #6b6b6bb9;
+  margin: 7px 10px;
+}
+
+.cover {
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  margin: 6px;
+}
+
+.ppbutton {
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.player-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 10px;
+  text-align: left;
+  width: 50%;
+}
+
+.player-text h3,
+h4,
+a {
+  text-decoration: none;
+  margin: 0;
+  color: white;
+  font-weight: 400;
+}
+
+.player-text a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.player-text h3 {
+  font-size: 1.4rem;
+  margin: 5px 0 0 0;
+}
+
+.player-text h4 {
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.player-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+.fa-heart {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.767);
+}
+
+.liked {
+  color: red !important;
 }

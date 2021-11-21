@@ -214,13 +214,12 @@ ul {
 
 .ficons {
     width: 80px;
-    transition: width .3s, height .3s;
+    transition: 300ms;
 }
 
 .ficons:hover {
     width: 100px;
-    height: 100px;
-    transform: rotate(360deg);
+    margin: -10px;
 }
 
 

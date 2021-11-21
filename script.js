@@ -13,14 +13,14 @@ document.getElementById('autoGreetings').innerHTML = '<h2>' + greet + '</h2>';
 //Nav Blur:
 var nav = document.querySelector('nav'); // Identify target
 
-window.addEventListener('scroll', function(event) { // To listen for event
-    event.preventDefault();
+window.addEventListener('scroll', function (event) { // To listen for event
+  event.preventDefault();
 
-    if (window.scrollY <= 300) { // Just an example
-        nav.style.backgroundColor = 'transparent'; // or default color
-    } else {
-        nav.style.backgroundColor = '#13120D';
-    }
+  if (window.scrollY <= 300) { // Just an example
+    nav.style.backgroundColor = 'transparent'; // or default color
+  } else {
+    nav.style.backgroundColor = '#13120D';
+  }
 });
 
 // heart
@@ -85,6 +85,7 @@ const coverImage = document.querySelector('#cover');
 const currentMusicTime = document.querySelector('.start-time');
 const musicDuration = document.querySelector('.play-time');
 const seekBar = document.querySelector('.music-progress');
+const queue = [...document.querySelectorAll('.queue-song')];
 
 const repeatBtn = document.querySelector('.fa-retweet');
 
@@ -103,12 +104,12 @@ const setMusic = (i) => {
   coverImage.src = song.cover;
 
   setTimeout(() => {
-      seekBar.max = music.duration;
-      musicDuration.innerHTML = formatTime(music.duration);
+    seekBar.max = music.duration;
+    musicDuration.innerHTML = formatTime(music.duration);
   }, 300);
   currentMusicTime.innerHTML = '00 : 00';
-  // queue.forEach(item => item.classList.remove('active'));
-  // queue[currentMusic].classList.add('active');
+  queue.forEach(item => item.classList.remove('active'));
+  queue[currentMusic].classList.add('active');
 }
 
 setMusic(0);
@@ -117,13 +118,13 @@ setMusic(0);
 
 const formatTime = (time) => {
   let min = Math.floor(time / 60);
-  if(min < 10){
-      min = `0` + min;
+  if (min < 10) {
+    min = `0` + min;
   }
 
   let sec = Math.floor(time % 60);
-  if(sec < 10){
-      sec = `0` + sec;
+  if (sec < 10) {
+    sec = `0` + sec;
   }
 
   return `${min} : ${sec}`;
@@ -132,10 +133,10 @@ const formatTime = (time) => {
 // //  forward btn
 const forwardBtn = document.querySelector('.fa-forward');
 forwardBtn.addEventListener('click', () => {
-  if(currentMusic >= songs.length - 1){
-      currentMusic = 0;
-  } else{
-      currentMusic++;
+  if (currentMusic >= songs.length - 1) {
+    currentMusic = 0;
+  } else {
+    currentMusic++;
   }
   setMusic(currentMusic);
   ppbutton.click();
@@ -144,10 +145,10 @@ forwardBtn.addEventListener('click', () => {
 // // backward btn
 const backwardBtn = document.querySelector('.fa-backward');
 backwardBtn.addEventListener('click', () => {
-  if(currentMusic <= 0){
-      currentMusic = songs.length - 1;
-  } else{
-      currentMusic--;
+  if (currentMusic <= 0) {
+    currentMusic = songs.length - 1;
+  } else {
+    currentMusic--;
   }
   setMusic(currentMusic);
   ppbutton.click();
@@ -158,14 +159,29 @@ repeatBtn.addEventListener('click', () => {
   repeatBtn.classList.toggle('active');
 })
 
+// Function to reset all values to their default
+function resetValues() {
+  currentMusicTime.textContent = "00:00";
+  musicDuration.textContent = "00:00";
+  seek_slider.value = 0;
+}
+
+
 // access playlist
 
-// const playlistSection = document.querySelector('.playlist');
-// const navBtn = document.querySelector('.music-player-section .nav-btn');
+const playlistSection = document.querySelector('.pl-queue');
+const plButton = document.querySelector('#plButton');
 
-// navBtn.addEventListener('click', () => {
-//     playlistSection.classList.add('active');
-// })
+plButton.addEventListener('click', () => {
+    playlistSection.classList.toggle('active');
+})
+
+queue.forEach((item, i) => {
+  item.addEventListener('click', () => {
+      setMusic(i);
+      ppbutton.click();
+  })
+})
 
 
 
@@ -186,4 +202,3 @@ repeatBtn.addEventListener('click', () => {
 // seekBar.addEventListener('change', () => {
 //   music.start-time = seekBar.value;
 // })
-
