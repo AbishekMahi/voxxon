@@ -16,6 +16,8 @@
 </head>
 
 <body>
+    <div class="maindiv"></div>
+
     <div class="top-content">
         <img class="top-icons" id="menu" src="icons/menu.png" alt="">
         <div class="menu_slider menu_close">
@@ -262,14 +264,13 @@
                 <h6>20 Songs</h6>
             </div>
 
-
             <div class="playlist">
                 <a href="playlist/Hits-of-Anirudh.html">
                     <center><img class="playlist-img" src="web-images/Anirudh-hits.png" alt="artwork_img">
                         <center>
                             <div class="art-back">
-                                <a href="playlist/Hits-of-Anirudh.html"><img class="art-back-icon"
-                                        src="icons/play.png" alt=""></a>
+                                <a href="playlist/Hits-of-Anirudh.html"><img class="art-back-icon" src="icons/play.png"
+                                        alt=""></a>
                             </div>
                         </center>
                     </center>
@@ -277,8 +278,6 @@
                     <h6>20 Songs</h6>
                 </a>
             </div>
-
-
 
             <div class="playlist">
                 <center><img class="playlist-img" src="web-images/rahman-hits.png" alt="artwork_img">
@@ -586,20 +585,61 @@
             Profile
         </a>
     </div>
+
     <!-- player -->
     <div class="player">
-        <img class="cover" src="https://i.scdn.co/image/ab67616d00001e02a836738fc54f2182a5712574"
-            alt="">
+        <img class="cover" src="https://upload.wikimedia.org/wikipedia/en/0/02/99_Songs_soundtrack.jpg" alt="">
         <div class="player-text">
-            <h3><a href="#">Jai Sulthan</a></h3>
-            <h4><a href="#">Vivek-Merwin</a></h4>
+            <h3><a href="#">Oor Aayiram Vaanavil</a></h3>
+            <h4><a href="#">A. R. Rahman, Vijay Yesudas</a></h4>
         </div>
         <div class="player-btns">
             <i id="like" class="fas fa-heart"></i>
             <img id="ppbutton" src="icons/play.png">
         </div>
-
     </div>
+    <div class="fulplr">
+        <div class="full-player">
+            <div class="plr-top">
+                <i id="player_back" class="fas fa-chevron-left"></i>
+                <div class="plr-top-txt">
+                    <h3>Song From</h3>
+                    <h4><a href="#">99 Songs(Tamil)</a></h4>
+                </div>
+                <i id="player_more" class="fas fa-ellipsis-v"></i>
+            </div>
+            <img class="artwork" src="https://upload.wikimedia.org/wikipedia/en/0/02/99_Songs_soundtrack.jpg" alt="">
+            <div class="textlike">
+                <div class="song-text">
+                    <h3><a href="#">Oor Aayiram Vaanavil</a></h3>
+                    <marquee behavior="scroll" scrollamount="4" direction="left"><h4><a href="#">A. R. Rahman, Vijay Yesudas</a></h4></marquee>
+                </div>
+                <i id="like" class="fas fa-heart"></i>
+            </div>
+
+
+            <input type="range" class="music-progress" min="0" max="1000" value="80">
+            <div class="duration">
+                <time class="start-time">00:00</time>
+                <time class="play-time">04:08</time>
+            </div>
+            <div class="play-control">
+                <i class="fas fa-random" title="Suffle" style="opacity: 70%;"></i>
+                <i class="fas fa-backward" title="Backward" style="opacity: 80%;"></i>
+                <img class="ppbutton" title="play" src="icons/play.png">
+                <i class="fas fa-forward" title="Forward" style="opacity: 80%;"></i>
+                <i class="fas fa-retweet" title="Repeat" style="opacity: 70%;"></i>
+              </div>
+            <div class="plr-bottom">
+                <i class="far fa-comment-dots"></i>
+                <button class="lyric">Lyrics</button>
+                <i class="fas fa-list-ul"></i>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- audio file -->
     <audio id="audiofile">
@@ -611,21 +651,14 @@
         document.location = "webapp.html";
     }
 </script>
-<script src="mob-script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="/mob-script.js"></script>
 <script src="https://kit.fontawesome.com/0b889a295e.js" crossorigin="anonymous"></script>
 <script>
-    document.addEventListener("keydown", function (event) {
-        switch (key) {
-            case space:
-                ppbutton(event.key)
-                audio.play();
-                break;
-
-            default:
-                break;
+    window.addEventListener('keypress', function (e) {
+        if (e.which == 32 && e.target == document.body) {
+            e.preventDefault();
         }
-        console.log(Event.key)
-        console.log(Event.code)
     });
 </script>
 

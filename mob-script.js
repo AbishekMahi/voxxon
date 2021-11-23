@@ -10,6 +10,13 @@ else if (hrs >= 17 && hrs <= 24)
   greet = 'Good Evening!';
 document.getElementById('autoGreetings').innerHTML = '<h2>' + greet + '</h2>';
 
+// spacebar down
+window.addEventListener('keypress', function (e) {
+  if (e.which == 32 && e.target == document.body) {
+    e.preventDefault();
+  }
+});
+
 // carousel
 const carousel = [...document.querySelectorAll('.carousel img')];
 let carouselImageIndex = 0;
@@ -71,3 +78,19 @@ menuToHomeBtn.addEventListener('click', () => {
   // menuSection.classList.remove('menu_close');
   menuSection.classList.remove('menu_open');
 })
+
+// access Full Player
+const playerSection = document.querySelector('.full-player');
+const miniPlayer = document.querySelector('.player');
+
+miniPlayer.addEventListener('click', () => {
+  playerSection.classList.toggle('active');
+})
+
+// back from Full Player to home
+const plrToHome = document.querySelector('#player_back');
+
+plrToHome.addEventListener('click', () => {
+  playerSection.classList.remove('active');
+})
+
