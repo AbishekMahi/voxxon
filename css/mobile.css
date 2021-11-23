@@ -1,11 +1,42 @@
+@import url(//db.onlinewebfonts.com/c/0de5d42078b6d0c1123dbcd6420fc26b?family=Pure+Thin);
+
+@import url(//db.onlinewebfonts.com/c/b61a0559b1017e0e9302f8278ece2332?family=Pure+Bold);
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Pure Thin", 'Jost', sans-serif;
+    src: url(fonts/TCM.ttf);
+}
+
+@font-face {
+    font-family: "Pure Thin";
+    src: url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.eot");
+    src: url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.woff") format("woff"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0de5d42078b6d0c1123dbcd6420fc26b.svg#Pure Thin") format("svg");
+}
+
+@font-face {
+    font-family: "Pure Bold";
+    src: url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.eot");
+    src: url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.woff") format("woff"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.svg#Pure Bold") format("svg");
+}
 body {
     margin: 0;
     padding: 0;
     background-color: #13120D;
 }
 
+.maindiv {
+    background: linear-gradient(180deg, #13120d 0%, #61605a48 100%);
+    z-index: -99;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
 * {
     scroll-behavior: smooth;
+    font-family: "Pure Thin", 'Jost', sans-serif;
 }
 
 .top-content {
@@ -21,12 +52,14 @@ body {
     opacity: 90%;
     cursor: pointer;
 }
-.menu_slider{
+
+.menu_slider {
     backdrop-filter: blur(20px);
-    overflow:auto;
+    overflow: auto;
     overflow-x: hidden;
 }
-.menu_open{
+
+.menu_open {
     border-radius: 0 10px 10px 0;
     width: 70%;
     height: 300px;
@@ -36,7 +69,7 @@ body {
     z-index: 99;
 }
 
-.menu_close{
+.menu_close {
     border-radius: 0 10px 10px 0;
     width: 100%;
     height: 100%;
@@ -45,30 +78,35 @@ body {
     position: fixed;
     z-index: 99;
 }
-.logo2{
+
+.logo2 {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     bottom: -140px;
 }
-#menu_back{
+
+#menu_back {
     font-size: 30px;
     color: #ffffff;
-    margin: 15px auto 10px 20px ;
+    margin: 15px auto 10px 20px;
 }
-.menu_slider ul li{
+
+.menu_slider ul li {
     text-decoration: none;
     font-size: 25px;
     margin: 15px auto;
     border: 2px;
 }
-.menu-icons{
+
+.menu-icons {
     margin: 5px;
     color: #ffffff;
 }
-.menu-line{
-    margin: 4% 0 0 ;
+
+.menu-line {
+    margin: 4% 0 0;
     border-color: rgb(255, 255, 255);
     border-style: none;
     border-top-style: solid;
@@ -113,7 +151,8 @@ h2 {
     transition: 1s;
     z-index: -99;
 }
-.carousel img.active{
+
+.carousel img.active {
     opacity: 1;
 }
 
@@ -143,10 +182,12 @@ h2 {
     align-items: center;
     opacity: 60%;
 }
+
 .down-nav a.active {
     opacity: 100%;
 }
-.down-nav a:hover{
+
+.down-nav a:hover {
     opacity: 90%;
 }
 
@@ -189,6 +230,13 @@ a {
     margin: 0;
     color: white;
     font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: unset;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .player-text a:hover {
@@ -219,12 +267,17 @@ a {
     color: rgba(255, 255, 255, 0.767);
 }
 
-.liked{
+.liked {
     color: red !important;
 }
 
 #ppbutton {
     width: 32px;
+    cursor: pointer;
+}
+
+.ppbutton {
+    width: 35px;
     cursor: pointer;
 }
 
@@ -424,11 +477,12 @@ h6 {
     background-repeat: no-repeat;
 }
 
-.seemore{
+.seemore {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .seemore-txt {
     width: 80px;
     margin: 20px;
@@ -473,6 +527,223 @@ h6 {
     font-size: 20px;
     font-family: "Pure Thin", 'Jost', sans-serif;
 }
-.logbtn:hover{
+
+.logbtn:hover {
     background-color: #ccb055;
+}
+
+/* full player */
+
+.fulplr .active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    margin: 0;
+    overflow: hidden;
+    padding: 5%;
+    backdrop-filter: blur(20px);
+    background: rgba(44, 44, 44, 0.644);
+}
+.full-player{
+    display: none;
+}
+
+.plr-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    /* margin: 2% 0; */
+}
+
+#player_back {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.plr-top-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.plr-top-txt h4 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.plr-top-txt h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 90%;
+    margin: 0;
+}
+
+#player_more {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.artwork {
+    width: 90%;
+    margin: 2% 0;
+}
+
+.textlike {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+#like {
+    font-size: 26px;
+}
+
+.song-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0;
+    text-align: left;
+    width: 85%;
+}
+
+.song-text h3 {
+    font-size: 1.6rem;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: unset;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.song-text h4 {
+    font-size: 1.4rem;
+    text-align: left;
+    margin: auto 0;
+    opacity: 90%;
+}
+
+.song-text h3,
+h4,
+a {
+    text-decoration: none;
+    margin: 0;
+    color: white;
+    font-weight: 400;
+}
+
+
+.music-progress {
+    width: 90%;
+    height: 2px;
+    margin: 0;
+    padding: 2px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #6e6e6e;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #13120D;
+    overflow: hidden;
+    transition: 30ms;
+}
+
+.music-progress:hover {
+    background: #6b6b6b;
+}
+
+.music-progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 5px;
+    width: 5px;
+    border-radius: 50px;
+    overflow: visible;
+    margin: 0;
+    padding: 2px 0;
+    background: #E9D080;
+    cursor: pointer;
+    border: none;
+    box-shadow: -500px 0 0 495px #E9D080;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+
+.duration {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    display: flex;
+    width: 90%;
+    cursor: auto;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.play-control {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 10px 0;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play-control .fas {
+    /* margin: 5px 10px 10px; */
+    color: #fff;
+}
+
+.play-control:hover {
+    opacity: 100%;
+}
+
+.play-control .active {
+    color: #E9D080;
+    opacity: 90%;
+}
+.plr-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 0 5%;
+    width: 90%;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.lyric{
+    border: none;
+    background-color: #6e6e6ea8;
+    padding:8px;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10px;
 }
