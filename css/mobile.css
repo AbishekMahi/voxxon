@@ -20,6 +20,7 @@
     src: url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.eot");
     src: url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.woff") format("woff"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b61a0559b1017e0e9302f8278ece2332.svg#Pure Bold") format("svg");
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -203,6 +204,7 @@ h2 {
     display: flex;
     height: 70px;
     position: fixed;
+    flex-direction: row;
     bottom: 60px;
     backdrop-filter: blur(10px);
     background: rgba(50, 50, 49, 0.8);
@@ -210,8 +212,20 @@ h2 {
     width: 100%;
 }
 
+.plr-click {
+    display: flex;
+    flex-direction: row;
+    /* position: fixed; */
+    /* bottom: 60px;
+    backdrop-filter: blur(10px);
+    background: rgba(50, 50, 49, 0.8);
+    border-radius: 5px;
+    width: 100%; */
+}
+
 .cover {
     border-radius: 5px;
+    height: 70px;
 }
 
 .player-text {
@@ -220,7 +234,7 @@ h2 {
     justify-content: center;
     margin: auto 10px;
     text-align: left;
-    width: 50%;
+    width: 100%;
 }
 
 .player-text h3,
@@ -551,7 +565,8 @@ h6 {
     backdrop-filter: blur(20px);
     background: rgba(44, 44, 44, 0.644);
 }
-.full-player{
+
+.full-player {
     display: none;
 }
 
@@ -728,7 +743,8 @@ input[type="range"]::-webkit-slider-thumb {
     color: #E9D080;
     opacity: 90%;
 }
-.plr-bottom{
+
+.plr-bottom {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -739,11 +755,15 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 1.5rem;
 }
 
-.lyric{
+.lyric {
     border: none;
     background-color: #6e6e6ea8;
-    padding:8px;
+    padding: 8px;
     color: #fff;
     font-size: 1.5rem;
     border-radius: 10px;
+}
+
+.lyric:hover {
+    background-color: #6e6e6ee8;
 }
