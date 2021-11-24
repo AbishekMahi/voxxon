@@ -81,7 +81,7 @@ menuToHomeBtn.addEventListener('click', () => {
 
 // access Full Player
 const playerSection = document.querySelector('.full-player');
-const miniPlayer = document.querySelector('.cover');
+const miniPlayer = document.querySelector('.plr-click');
 
 miniPlayer.addEventListener('click', () => {
   playerSection.classList.toggle('active');
