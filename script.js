@@ -23,6 +23,7 @@ window.addEventListener('scroll', function (event) { // To listen for event
   }
 });
 
+
 // heart
 const like = document.getElementById("like");
 like.addEventListener("click", function () {
@@ -51,11 +52,28 @@ ppbutton.addEventListener("click", function () {
     ppicon.src = "icons/play.png";
   }
 });
+$(window).keypress(function (e) {
+  if (e.which == 32) {
+    if (audio.paused) {
+      ppicon.src = "icons/pause.png";
+      audio.play();
+    } else {
+      audio.pause();
+      ppicon.src = "icons/play.png";
+    }
+  }
+});
+
+
+window.addEventListener('keypress', function(e) {
+  if(e.which == 32 && e.target == document.body) {
+    e.preventDefault();
+  }
+});
 
 // mute unmute
 var mutebtn = document.getElementById("mutebtn")
 mutebtn.addEventListener("click", mute);
-
 function mute() {
   if (audio.muted) {
     audio.muted = false;
@@ -65,6 +83,17 @@ function mute() {
     mutebtn.src = "icons/mute.png";
   }
 }
+// $(window).keypress(function (event) {
+//   if (event.which == 77) {
+//     if (audio.muted) {
+//       mutebtn.src = "icons/volume.png";
+//       audio.muted = false;
+//     } else {
+//       audio.muted = true;
+//       mutebtn.src = "icons/mute.png";
+//     }
+//   }
+// });
 
 // volume control
 var volumeslider;
@@ -173,13 +202,13 @@ const playlistSection = document.querySelector('.pl-queue');
 const plButton = document.querySelector('#plButton');
 
 plButton.addEventListener('click', () => {
-    playlistSection.classList.toggle('active');
+  playlistSection.classList.toggle('active');
 })
 
 queue.forEach((item, i) => {
   item.addEventListener('click', () => {
-      setMusic(i);
-      ppbutton.click();
+    setMusic(i);
+    ppbutton.click();
   })
 })
 
